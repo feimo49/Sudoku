@@ -3,6 +3,6 @@
 
 // 生成n个数独终局，程序执行错误返回-1  
 int generate_sudoku(int n);
-
+void generate_ques(int n);
 
 #endif
