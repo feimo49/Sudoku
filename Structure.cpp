@@ -42,7 +42,7 @@ void print(FILE* fp, BOARD board, int flag)
 		int t = i % 18;
 		if (t == 17)str[i] = '\n';
 		else if (i % 2 == 1)str[i] = ' ';
-		else str[i] = board.map[i / 18][t / 2];
+		else str[i] = board.map[i / 18][t / 2]+'0';
 	}
 	str[162] = '\0';
 	fputs(str, fp);
