@@ -103,13 +103,17 @@ void solve_sudoku(FILE *fp)
 	BOARD board;
 
 	int tmp;
-	while (~fscanf(fp, "%d", &tmp)) {
+	while (~fscanf(fp, "%d", &tmp)) 
+	{
 		board.map[0][0] = tmp;
-		for (int j = 1; j < 9; j++) {
+		for (int j = 1; j < 9; j++) 
+		{
 			fscanf(fp, "%d", &board.map[0][j]);
 		}
-		for (int i = 1; i < 9; i++) {
-			for (int j = 0; j < 9; j++) {
+		for (int i = 1; i < 9; i++) 
+		{
+			for (int j = 0; j < 9; j++)
+			{
 				fscanf(fp, "%d", &board.map[i][j]);
 			}
 		}
