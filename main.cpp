@@ -29,7 +29,7 @@ int main(int argc,char* argv[])
 	}
 	else if (strcmp(argv[1], "-s") == 0)
 	{
-		generate_ques(100);
+		//generate_ques(100);
 		FILE *fp;
 		fp = fopen(argv[2], "r");
 		if (fp == NULL) 
